@@ -20,27 +20,69 @@ class _MyAppState extends State<MyApp> {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            children: [
-              Container(
-                color: Colors.red,
-                width:100,
-                height: double.infinity,
+          child: Column(children: [
+            CircleAvatar(
+              radius: 50,
+              backgroundImage: AssetImage("images/Jazeel Anwar.jpg"),
+            ),
+            Text(
+              "Jazeel Anwar",
+              style: TextStyle(
+                fontFamily: 'Pacifico',
+                fontSize: 40,
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
               ),
-              SizedBox(width:40),
-              Container(
-                color: Colors.yellow,
-                width:100,
-                height: 100,
+            ),
+            Text(
+              "Flutter Developer",
+              style: TextStyle(
+                fontFamily: 'Source Sans Pro',
+                fontSize: 20,
+                color: Colors.teal.shade100,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 2.5,
               ),
-              SizedBox(width:40),
-              Container(
-                color: Colors.blue,
-                width:100,
-                height: double.infinity,
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+              padding: EdgeInsets.all(10),
+              color: Colors.white,
+              child: Row(
+                children: [
+                  Icon(Icons.phone, color: Colors.teal),
+                  SizedBox(width: 10),
+                  Text(
+                    '+918590300795',
+                    style: TextStyle(
+                      color: Colors.teal,
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 20,
+                    ),
+                  ),
+                ],
               ),
-            ],
-          ),
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+              padding: EdgeInsets.all(10),
+              color: Colors.white,
+              child: Row(
+                children: [
+                  Icon(Icons.email, color: Colors.teal),
+                  SizedBox(width: 10),
+                  Text(
+                    'jazeelanwar@gmail.com',
+                    style: TextStyle(
+                      color: Colors.teal,
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 20,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ]),
         ),
       ),
     );
