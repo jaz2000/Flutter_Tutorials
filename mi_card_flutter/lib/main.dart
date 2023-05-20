@@ -44,23 +44,26 @@ class _MyAppState extends State<MyApp> {
                 letterSpacing: 2.5,
               ),
             ),
-            Container(
+            Card(
               margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-              padding: EdgeInsets.all(10),
+              
               color: Colors.white,
-              child: Row(
-                children: [
-                  Icon(Icons.phone, color: Colors.teal),
-                  SizedBox(width: 10),
-                  Text(
-                    '+918590300795',
-                    style: TextStyle(
-                      color: Colors.teal,
-                      fontFamily: 'Source Sans Pro',
-                      fontSize: 20,
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: Row(
+                  children: [
+                    Icon(Icons.phone, color: Colors.teal),
+                    SizedBox(width: 10),
+                    Text(
+                      '+918590300795',
+                      style: TextStyle(
+                        color: Colors.teal,
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
             Container(
