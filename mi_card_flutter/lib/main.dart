@@ -20,7 +20,7 @@ class _MyAppState extends State<MyApp> {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Column(children: [
+          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
             CircleAvatar(
               radius: 50,
               backgroundImage: AssetImage("images/Jazeel Anwar.jpg"),
@@ -42,6 +42,13 @@ class _MyAppState extends State<MyApp> {
                 color: Colors.teal.shade100,
                 fontWeight: FontWeight.bold,
                 letterSpacing: 2.5,
+              ),
+            ),
+            SizedBox(
+              height: 20,
+              width: 150,
+              child: Divider(
+                color: Colors.teal.shade100,
               ),
             ),
             Card(
