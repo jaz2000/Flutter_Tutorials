@@ -46,43 +46,30 @@ class _MyAppState extends State<MyApp> {
             ),
             Card(
               margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-              
-              color: Colors.white,
-              child: Padding(
-                padding: EdgeInsets.all(10),
-                child: Row(
-                  children: [
-                    Icon(Icons.phone, color: Colors.teal),
-                    SizedBox(width: 10),
-                    Text(
-                      '+918590300795',
-                      style: TextStyle(
-                        color: Colors.teal,
-                        fontFamily: 'Source Sans Pro',
-                        fontSize: 20,
-                      ),
-                    ),
-                  ],
+              child: ListTile(
+                leading: Icon(Icons.phone, color: Colors.teal),
+                title: Text(
+                  '+918590300795',
+                  style: TextStyle(
+                    color: Colors.teal,
+                    fontFamily: 'Source Sans Pro',
+                    fontSize: 20,
+                  ),
                 ),
               ),
             ),
-            Container(
+            Card(
               margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-              padding: EdgeInsets.all(10),
-              color: Colors.white,
-              child: Row(
-                children: [
-                  Icon(Icons.email, color: Colors.teal),
-                  SizedBox(width: 10),
-                  Text(
-                    'jazeelanwar@gmail.com',
-                    style: TextStyle(
-                      color: Colors.teal,
-                      fontFamily: 'Source Sans Pro',
-                      fontSize: 20,
-                    ),
+              child: ListTile(
+                leading: Icon(Icons.email, color: Colors.teal),
+                title: Text(
+                  'jazeelanwar@gmail.com',
+                  style: TextStyle(
+                    color: Colors.teal,
+                    fontFamily: 'Source Sans Pro',
+                    fontSize: 20,
                   ),
-                ],
+                ),
               ),
             ),
           ]),
