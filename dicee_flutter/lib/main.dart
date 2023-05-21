@@ -2,7 +2,16 @@ import 'package:flutter/material.dart';
 
 void main() {
   return runApp(
-    MaterialApp(
+    MyApp()
+  );
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.red,
         appBar: AppBar(
@@ -12,10 +21,9 @@ void main() {
         ),
         body: DicePage(),
       ),
-    ),
-  );
+    );
+  }
 }
-
 class DicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
