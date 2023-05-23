@@ -81,12 +81,13 @@ class _QuizPageState extends State<QuizPage> {
                   print("Sorry");
                 }
                 setState(() {
-                  scoreKeeper.add(
-                    Icon(
-                      Icons.check,
-                      color: Colors.green,
-                    ),
-                  );
+                  // scoreKeeper.add(
+                  //   Icon(
+                  //     Icons.check,
+                  //     color: Colors.green,
+                  //   ),
+                  // );
+                  questionNumber++;
                 });
               },
             ),
@@ -116,18 +117,18 @@ class _QuizPageState extends State<QuizPage> {
                   print("Sorry");
                 }
                 setState(() {
-                  scoreKeeper.add(
-                    Icon(
-                      Icons.close,
-                      color: Colors.red,
-                    ),
-                  );
+                  // scoreKeeper.add(
+                  //   Icon(
+                  //     Icons.close,
+                  //     color: Colors.red,
+                  //   ),
+                  // );
+                  questionNumber++;
                 });
               },
             ),
           ),
         ),
-
         Row(
           children: scoreKeeper,
         )
