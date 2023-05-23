@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "co.appbrewery.xylophone.app-mergeDebugResources-9:/values/values.xml",
+            "outputFile": "co.appbrewery.xylophone.app-mergeDebugResources-10:/values/values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\jazee\\.gradle\\caches\\transforms-3\\25cee5f028ac2a6b79fd6278ff5b59e2\\transformed\\jetified-window-1.0.0-beta04\\res\\values\\values.xml",
