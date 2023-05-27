@@ -86,6 +86,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "rflutter_alert",
+      "rootUri": "file:///C:/Users/jazee/AppData/Local/Pub/Cache/hosted/pub.dev/rflutter_alert-2.0.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///C:/src/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -140,7 +146,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-05-23T04:00:04.607295Z",
+  "generated": "2023-05-27T05:15:29.136443Z",
   "generator": "pub",
   "generatorVersion": "3.0.1"
 }

@@ -37,10 +37,22 @@ class Quizbrain {
       _questionNumber = 0;
     }
   }
-  String getquestionText(){
+
+  String getquestionText() {
     return _questionBank[_questionNumber].questionText;
   }
-  bool getquestionAnswer(){
+
+  bool getquestionAnswer() {
     return _questionBank[_questionNumber].questionAnswer;
   }
+
+  bool isFinished() {
+    return _questionNumber >= _questionBank.length - 1 ? reset() : false;
+  }
+
+  bool reset() {
+    _questionNumber = 0;
+    return true;
+  }
+  
 }
