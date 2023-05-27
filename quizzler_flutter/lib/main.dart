@@ -33,8 +33,31 @@ class _QuizPageState extends State<QuizPage> {
   //   'A slug\'s blood is green.',
   // ];
   // List<bool> answers = [false, true, true];
-  int questionNumber = 0;
+  // int questionNumber = 0;
   Quizbrain quizBrain = Quizbrain();
+  void checkanswer(bool userPickedAnswer) {
+    bool correct_answer = quizBrain.getquestionAnswer();
+
+    setState(() {
+      if (correct_answer == userPickedAnswer) {
+        scoreKeeper.add(
+          Icon(
+            Icons.check,
+            color: Colors.green,
+          ),
+        );
+      } else {
+        scoreKeeper.add(
+          Icon(
+            Icons.close,
+            color: Colors.red,
+          ),
+        );
+      }
+      quizBrain.nextQuestion();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -47,7 +70,7 @@ class _QuizPageState extends State<QuizPage> {
             padding: EdgeInsets.all(10.0),
             child: Center(
               child: Text(
-                quizBrain.questionBank[questionNumber].questionText,
+                quizBrain.getquestionText(),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 25.0,
@@ -73,22 +96,7 @@ class _QuizPageState extends State<QuizPage> {
               ),
               onPressed: () {
                 //The user picked true.
-                bool correct_answer =
-                    quizBrain.questionBank[questionNumber].questionAnswer;
-                if (correct_answer == true) {
-                  print("Got it right");
-                } else {
-                  print("Sorry");
-                }
-                setState(() {
-                  // scoreKeeper.add(
-                  //   Icon(
-                  //     Icons.check,
-                  //     color: Colors.green,
-                  //   ),
-                  // );
-                  questionNumber++;
-                });
+                checkanswer(true);
               },
             ),
           ),
@@ -109,22 +117,7 @@ class _QuizPageState extends State<QuizPage> {
                 ),
               ),
               onPressed: () {
-                bool correct_answer =
-                    quizBrain.questionBank[questionNumber].questionAnswer;
-                if (correct_answer == false) {
-                  print("Got it right");
-                } else {
-                  print("Sorry");
-                }
-                setState(() {
-                  // scoreKeeper.add(
-                  //   Icon(
-                  //     Icons.close,
-                  //     color: Colors.red,
-                  //   ),
-                  // );
-                  questionNumber++;
-                });
+                checkanswer(false);
               },
             ),
           ),
