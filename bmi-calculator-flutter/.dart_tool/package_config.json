@@ -56,6 +56,12 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "font_awesome_flutter",
+      "rootUri": "file:///C:/Users/jazee/AppData/Local/Pub/Cache/hosted/pub.dev/font_awesome_flutter-10.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "js",
       "rootUri": "file:///C:/Users/jazee/AppData/Local/Pub/Cache/hosted/pub.dev/js-0.6.7",
       "packageUri": "lib/",
@@ -140,7 +146,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-05-28T12:08:14.261311Z",
+  "generated": "2023-05-28T12:26:45.021263Z",
   "generator": "pub",
   "generatorVersion": "3.0.1"
 }
